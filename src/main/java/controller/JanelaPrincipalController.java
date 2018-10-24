@@ -32,7 +32,7 @@ public class JanelaPrincipalController {
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/view/CadastroFuncionario.fxml"));
 		Parent parent = loader.load();
 		pnlRaiz.setCenter(parent);
-		stage.setTitle("Projeto Final - Cadastro de Funcionarios");
+		stage.setTitle("ADRB - Cadastro de Funcionarios");
 
     }
 

@@ -1,6 +1,7 @@
-package br.com.sistemaadrb;
+package start;
 
-import br.com.sistemaadrb.controller.JanelaPrincipalController;
+
+import controller.JanelaPrincipalController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,8 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Start extends Application {
-	
+public class Start2 extends Application {
+
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -17,13 +18,13 @@ public class Start extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/view/JanelaPrincipal.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/JanelaPrincipal.fxml"));
 		Parent parent = loader.load();
 		JanelaPrincipalController controller = loader.getController();
 		controller.setStage(stage);
 
 		stage.setScene(new Scene(parent));
-		stage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/image/adrbicone.png")));
+		stage.getIcons().add(new Image(getClass().getResourceAsStream("/image/adrbicone.png")));
 		stage.setTitle("Sistema ADRB");
 		stage.setWidth(600);
 		stage.setHeight(400);
