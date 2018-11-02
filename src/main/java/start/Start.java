@@ -9,7 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Start2 extends Application {
+public class Start extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
@@ -18,7 +18,7 @@ public class Start2 extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/JanelaPrincipal.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/JanelaPrincipal.fxml"));
 		Parent parent = loader.load();
 		JanelaPrincipalController controller = loader.getController();
 		controller.setStage(stage);
