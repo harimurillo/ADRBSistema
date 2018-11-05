@@ -1,7 +1,5 @@
 package start;
 
-
-import controller.JanelaPrincipalController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,16 +16,16 @@ public class Start extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/JanelaPrincipal.fxml"));
-		Parent parent = loader.load();
-		JanelaPrincipalController controller = loader.getController();
-		controller.setStage(stage);
+		Parent root = FXMLLoader.load(getClass().getResource("/view/JanelaPrincipal.fxml"));
+		
+		Scene scene = new Scene(root);
 
-		stage.setScene(new Scene(parent));
+		stage.setScene(scene);
 		stage.getIcons().add(new Image(getClass().getResourceAsStream("/image/adrbicone.png")));
 		stage.setTitle("Sistema ADRB");
 		stage.setWidth(600);
 		stage.setHeight(400);
+		stage.setResizable(false);
 		stage.show();
 	}
 
