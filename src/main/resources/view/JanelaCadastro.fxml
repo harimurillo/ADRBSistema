@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JanelaCadastroController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JanelaCadastroController">
    <children>
-      <Button layoutX="268.0" layoutY="188.0" mnemonicParsing="false" text="Button" />
+      <Label fx:id="lblCadastrar" layoutX="42.0" layoutY="14.0" prefHeight="17.0" prefWidth="132.0" text="Cadastrar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="42.0" layoutY="69.0" mnemonicParsing="false" onAction="#cadastrarPacienteOnAction" prefHeight="65.0" prefWidth="157.0" text="Paciente">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="sairButton" layoutX="42.0" layoutY="328.0" mnemonicParsing="false" onAction="#sairOnAction" prefHeight="32.0" prefWidth="115.0" text="Sair" />
+      <Button layoutX="448.0" layoutY="328.0" mnemonicParsing="false" onAction="#ajudaOnAction" prefHeight="32.0" prefWidth="115.0" text="Ajuda" />
+      <Button layoutX="406.0" layoutY="69.0" mnemonicParsing="false" onAction="#cadastrarFuncionarioOnAction" prefHeight="65.0" prefWidth="157.0" text="Funcionário">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="42.0" layoutY="168.0" mnemonicParsing="false" onAction="#cadastrarVisitaOnAction" prefHeight="65.0" prefWidth="157.0" text="Visita">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="226.0" layoutY="168.0" mnemonicParsing="false" onAction="#cadastrarServicoOnAction" prefHeight="65.0" prefWidth="157.0" text="Serviço">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="406.0" layoutY="168.0" mnemonicParsing="false" onAction="#cadastrarOrcamentoOnAction" prefHeight="65.0" prefWidth="157.0" text="Orçamento">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="243.0" layoutY="328.0" mnemonicParsing="false" onAction="#voltarOnAction" prefHeight="32.0" prefWidth="115.0" text="Voltar" />
    </children>
 </Pane>

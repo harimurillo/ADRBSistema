@@ -33,7 +33,14 @@ public class JanelaPrincipalController {
 	}
 
 	@FXML
-	void consultarOnAction(ActionEvent event) {
+	void consultarOnAction(ActionEvent event) throws IOException {
+
+		Parent janelaConsultaParent = FXMLLoader.load(getClass().getResource("/view/JanelaConsulta.fxml"));
+		Scene janelaConsultaScene = new Scene(janelaConsultaParent);
+		Stage janelaConsultaStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		janelaConsultaStage.hide();
+		janelaConsultaStage.setScene(janelaConsultaScene);
+		janelaConsultaStage.show();
 
 	}
 
