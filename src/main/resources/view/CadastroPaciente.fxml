@@ -7,29 +7,29 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroPacienteController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroPacienteController">
    <children>
-      <Label fx:id="lblNome" layoutX="24.0" layoutY="50.0" text="Nome:" />
-      <TextField fx:id="txtBoxNome" layoutX="22.0" layoutY="67.0" prefHeight="25.0" prefWidth="556.0" />
-      <Label fx:id="lblEndereco" layoutX="24.0" layoutY="164.0" text="Endereço:" />
-      <TextField fx:id="txtBoxEndereco" layoutX="23.0" layoutY="182.0" prefHeight="25.0" prefWidth="412.0" />
-      <Label fx:id="lblDataNascimento" layoutX="22.0" layoutY="107.0" text="Data de Nascimento:" />
-      <TextField fx:id="txtBoxDataNascimento" layoutX="22.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
-      <Label fx:id="lblTelefone" layoutX="165.0" layoutY="107.0" text="Telefone:" />
-      <TextField fx:id="txtBoxTelefone" layoutX="165.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
-      <Label fx:id="lblBairro" layoutX="452.0" layoutY="163.0" text="Bairro:" />
-      <ComboBox fx:id="cbBoxBairro" layoutX="452.0" layoutY="181.0" prefHeight="25.0" prefWidth="125.0" />
-      <Label fx:id="lblCpf" layoutX="452.0" layoutY="107.0" text="CPF:" />
-      <TextField fx:id="txtBoxCpf" layoutX="452.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
-      <Label fx:id="lblRg" layoutX="309.0" layoutY="107.0" text="RG:" />
-      <TextField fx:id="txtBoxRg" layoutX="309.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
       <Label fx:id="lblCadastrarPaciente" layoutX="22.0" layoutY="14.0" text="Cadastrar Paciente">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="457.0" layoutY="338.0" mnemonicParsing="false" onAction="#ajudaOnAction" prefHeight="32.0" prefWidth="115.0" text="Ajuda" />
-      <Button layoutX="243.0" layoutY="338.0" mnemonicParsing="false" onAction="#voltarOnAction" prefHeight="32.0" prefWidth="115.0" text="Voltar" />
+      <Label fx:id="lblNome" layoutX="24.0" layoutY="50.0" text="Nome:" />
+      <TextField fx:id="txtBoxNome" layoutX="22.0" layoutY="67.0" prefHeight="25.0" prefWidth="556.0" />
+      <Label fx:id="lblDataNascimento" layoutX="22.0" layoutY="107.0" text="Data de Nascimento:" />
+      <TextField fx:id="txtBoxDataNascimento" layoutX="22.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
+      <Label fx:id="lblTelefone" layoutX="165.0" layoutY="107.0" text="Telefone:" />
+      <TextField fx:id="txtBoxTelefone" layoutX="165.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
+      <Label fx:id="lblRg" layoutX="309.0" layoutY="107.0" text="RG:" />
+      <TextField fx:id="txtBoxRg" layoutX="309.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
+      <Label fx:id="lblCpf" layoutX="452.0" layoutY="107.0" text="CPF:" />
+      <TextField fx:id="txtBoxCpf" layoutX="452.0" layoutY="125.0" prefHeight="25.0" prefWidth="125.0" />
+      <Label fx:id="lblEndereco" layoutX="24.0" layoutY="164.0" text="Endereço:" />
+      <TextField fx:id="txtBoxEndereco" layoutX="23.0" layoutY="182.0" prefHeight="25.0" prefWidth="412.0" />
+      <Label fx:id="lblBairro" layoutX="452.0" layoutY="163.0" text="Bairro:" />
+      <ComboBox fx:id="cbBoxBairro" layoutX="452.0" layoutY="181.0" prefHeight="25.0" prefWidth="125.0" />
       <Button layoutX="26.0" layoutY="338.0" mnemonicParsing="false" onAction="#limparOnAction" prefHeight="32.0" prefWidth="115.0" text="Limpar" />
+      <Button layoutX="243.0" layoutY="338.0" mnemonicParsing="false" onAction="#voltarOnAction" prefHeight="32.0" prefWidth="115.0" text="Voltar" />
+      <Button layoutX="457.0" layoutY="338.0" mnemonicParsing="false" onAction="#ajudaOnAction" prefHeight="32.0" prefWidth="115.0" text="Ajuda" />
    </children>
 </Pane>
