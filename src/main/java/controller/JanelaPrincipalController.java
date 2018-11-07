@@ -4,46 +4,49 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class JanelaPrincipalController {
-	
+
 	@FXML
-	private BorderPane pnlRaiz;
+	private ImageView logoImageView;
 
-	private Stage stage;
+	@FXML
+	void ajudaOnAction(ActionEvent event) {
 
-	public void setStage(Stage stage) {
-		this.stage = stage;
 	}
 
-    @FXML
-    void cadastroCargoOnAction(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/view/CadastroCargo.fxml"));
-		Parent parent = loader.load();
-		pnlRaiz.setCenter(parent);
-		stage.setTitle("ADRB - Cadastro de Cargos");
-  }
+	@FXML
+	void cadastrarOnAction(ActionEvent event) throws IOException {
 
-    @FXML
-    void cadastroFuncionarioOnAction(ActionEvent event) throws IOException {
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/view/CadastroFuncionario.fxml"));
-		Parent parent = loader.load();
-		pnlRaiz.setCenter(parent);
-		stage.setTitle("Projeto Final - Cadastro de Funcionarios");
+		Parent janelaCadastroParent = FXMLLoader.load(getClass().getResource("/view/JanelaCadastro.fxml"));
+		Scene janelaCadastroScene = new Scene(janelaCadastroParent);
+		Stage janelaCadastroStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		janelaCadastroStage.hide();
+		janelaCadastroStage.setScene(janelaCadastroScene);
+		janelaCadastroStage.show();
 
-    }
+	}
 
-    @FXML
-    void cadastroPacienteOnAction(ActionEvent event) {
+	@FXML
+	void consultarOnAction(ActionEvent event) throws IOException {
 
-    }
+		Parent janelaConsultaParent = FXMLLoader.load(getClass().getResource("/view/JanelaConsulta.fxml"));
+		Scene janelaConsultaScene = new Scene(janelaConsultaParent);
+		Stage janelaConsultaStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		janelaConsultaStage.hide();
+		janelaConsultaStage.setScene(janelaConsultaScene);
+		janelaConsultaStage.show();
 
-    @FXML
-    void pesquisaPacienteOnAction(ActionEvent event) {
+	}
 
-    }
+	@FXML
+	void sairOnAction(ActionEvent event) {
+
+	}
 
 }
