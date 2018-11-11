@@ -44,6 +44,9 @@ public class PesquisaPacienteController {
 
     @FXML
     void limparOnAction(ActionEvent event) {
+    	
+    	txtBoxNome.clear();
+    	txtBoxTelefone.clear();
 
     }
 

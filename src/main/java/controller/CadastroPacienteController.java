@@ -1,5 +1,7 @@
 package controller;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,11 +9,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class CadastroPacienteController {
 
@@ -29,9 +30,14 @@ public class CadastroPacienteController {
 
     @FXML
     private Label lblDataNascimento;
-
+    
     @FXML
-    private TextField txtBoxDataNascimento;
+    void dtPickerOnAction(ActionEvent event) {
+
+    }
+    
+    @FXML
+    private DatePicker txtDtPicker;
 
     @FXML
     private Label lblTelefone;
@@ -67,6 +73,14 @@ public class CadastroPacienteController {
 
     @FXML
     void limparOnAction(ActionEvent event) {
+    	
+    	txtBoxNome.clear();
+    	txtBoxEndereco.clear();
+    	txtBoxTelefone.clear();
+    	txtDtPicker.getEditor().clear();
+    	cbBoxBairro.setValue(null);
+    	txtBoxCpf.clear();
+    	txtBoxRg.clear();
 
     }
 
