@@ -5,34 +5,34 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JanelaConsultaController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JanelaPesquisaController">
    <children>
-      <Label fx:id="lblConsultar" layoutX="42.0" layoutY="14.0" prefHeight="17.0" prefWidth="132.0" text="Consultar">
+      <Label fx:id="lblPesquisa" layoutX="42.0" layoutY="14.0" prefHeight="17.0" prefWidth="132.0" text="Pesquisar">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Button layoutX="42.0" layoutY="69.0" mnemonicParsing="false" onAction="#consultarPacienteOnAction" prefHeight="65.0" prefWidth="157.0" text="Paciente">
+      <Button layoutX="42.0" layoutY="69.0" mnemonicParsing="false" onAction="#pesquisarPacienteOnAction" prefHeight="65.0" prefWidth="157.0" text="Paciente">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="406.0" layoutY="69.0" mnemonicParsing="false" onAction="#consultarFuncionarioOnAction" prefHeight="65.0" prefWidth="157.0" text="Funcionário">
+      <Button layoutX="406.0" layoutY="69.0" mnemonicParsing="false" onAction="#pesquisarFuncionarioOnAction" prefHeight="65.0" prefWidth="157.0" text="Funcionário">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="42.0" layoutY="168.0" mnemonicParsing="false" onAction="#consultarVisitaOnAction" prefHeight="65.0" prefWidth="157.0" text="Visita">
+      <Button layoutX="42.0" layoutY="168.0" mnemonicParsing="false" onAction="#pesquisarVisitaOnAction" prefHeight="65.0" prefWidth="157.0" text="Visita">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="226.0" layoutY="168.0" mnemonicParsing="false" onAction="#consultarServicoOnAction" prefHeight="65.0" prefWidth="157.0" text="Serviço">
+      <Button layoutX="226.0" layoutY="168.0" mnemonicParsing="false" onAction="#pesquisarServicoOnAction" prefHeight="65.0" prefWidth="157.0" text="Serviço">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="406.0" layoutY="168.0" mnemonicParsing="false" onAction="#consultarOrcamentoOnAction" prefHeight="65.0" prefWidth="157.0" text="Orçamento">
+      <Button layoutX="406.0" layoutY="168.0" mnemonicParsing="false" onAction="#pesquisarOrcamentoOnAction" prefHeight="65.0" prefWidth="157.0" text="Orçamento">
          <font>
             <Font size="24.0" />
          </font>

@@ -1,19 +1,23 @@
 package controller;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollBar;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
-public class CadastroPacienteController {
+public class PesquisaPacienteController {
+	
+    @FXML
+    private Label lblPesquisarPaciente;
 
     @FXML
     private Label lblNome;
@@ -22,43 +26,16 @@ public class CadastroPacienteController {
     private TextField txtBoxNome;
 
     @FXML
-    private Label lblEndereco;
-
-    @FXML
-    private TextField txtBoxEndereco;
-
-    @FXML
-    private Label lblDataNascimento;
-
-    @FXML
-    private TextField txtBoxDataNascimento;
-
-    @FXML
     private Label lblTelefone;
 
     @FXML
     private TextField txtBoxTelefone;
 
     @FXML
-    private Label lblBairro;
+    private ScrollBar scrollPaciente;
 
     @FXML
-    private ComboBox<?> cbBoxBairro;
-
-    @FXML
-    private Label lblCpf;
-
-    @FXML
-    private TextField txtBoxCpf;
-
-    @FXML
-    private Label lblRg;
-
-    @FXML
-    private TextField txtBoxRg;
-
-    @FXML
-    private Label lblCadastrarPaciente;
+    private TableView<?> tbviewPaciente;
 
     @FXML
     void ajudaOnAction(ActionEvent event) {
@@ -71,9 +48,9 @@ public class CadastroPacienteController {
     }
 
     @FXML
-    void voltarOnAction(ActionEvent event) throws IOException{
-
-    	Parent parent = FXMLLoader.load(getClass().getResource("/view/JanelaCadastro.fxml"));
+    void voltarOnAction(ActionEvent event) throws IOException {
+    	
+    	Parent parent = FXMLLoader.load(getClass().getResource("/view/JanelaPesquisa.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.hide();
