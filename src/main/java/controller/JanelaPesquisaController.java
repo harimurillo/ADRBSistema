@@ -11,10 +11,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class JanelaCadastroController {
+public class JanelaPesquisaController {
 
     @FXML
-    private Label lblCadastrar;
+    private Label lblPesquisa;
 
     @FXML
     void ajudaOnAction(ActionEvent event) {
@@ -22,34 +22,34 @@ public class JanelaCadastroController {
     }
 
     @FXML
-    void cadastrarPacienteOnAction(ActionEvent event) throws IOException{
-
-    	Parent parent = FXMLLoader.load(getClass().getResource("/view/CadastroPaciente.fxml"));
-		Scene scene = new Scene(parent);
-		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-		stage.hide();
-		stage.setScene(scene);
-		stage.show();
-
-    }
-
-    @FXML
-    void cadastrarFuncionarioOnAction(ActionEvent event) {
+    void pesquisarPacienteOnAction(ActionEvent event) throws IOException{
+    	
+    	 Parent parent = FXMLLoader.load(getClass().getResource("/view/PesquisaPaciente.fxml"));
+         Scene scene = new Scene(parent);
+         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+         stage.hide();
+         stage.setScene(scene);
+         stage.show();
 
     }
 
     @FXML
-    void cadastrarOrcamentoOnAction(ActionEvent event) {
+    void pesquisarFuncionarioOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void cadastrarServicoOnAction(ActionEvent event) {
+    void pesquisarOrcamentoOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void cadastrarVisitaOnAction(ActionEvent event) {
+    void pesquisarServicoOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void pesquisarVisitaOnAction(ActionEvent event) {
 
     }
 
@@ -64,7 +64,7 @@ public class JanelaCadastroController {
     }
 
     @FXML
-    void voltarOnAction(ActionEvent event) throws IOException{
+    void voltarOnAction(ActionEvent event) throws IOException {
 
     	Parent parent = FXMLLoader.load(getClass().getResource("/view/JanelaPrincipal.fxml"));
         Scene scene = new Scene(parent);

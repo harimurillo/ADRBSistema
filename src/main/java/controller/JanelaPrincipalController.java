@@ -23,29 +23,34 @@ public class JanelaPrincipalController {
 	@FXML
 	void cadastrarOnAction(ActionEvent event) throws IOException {
 
-		Parent janelaCadastroParent = FXMLLoader.load(getClass().getResource("/view/JanelaCadastro.fxml"));
-		Scene janelaCadastroScene = new Scene(janelaCadastroParent);
-		Stage janelaCadastroStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-		janelaCadastroStage.hide();
-		janelaCadastroStage.setScene(janelaCadastroScene);
-		janelaCadastroStage.show();
+		Parent parent = FXMLLoader.load(getClass().getResource("/view/JanelaCadastro.fxml"));
+		Scene scene = new Scene(parent);
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		stage.hide();
+		stage.setScene(scene);
+		stage.show();
 
 	}
 
 	@FXML
-	void consultarOnAction(ActionEvent event) throws IOException {
+	void pesquisarOnAction(ActionEvent event) throws IOException {
 
-		Parent janelaConsultaParent = FXMLLoader.load(getClass().getResource("/view/JanelaConsulta.fxml"));
-		Scene janelaConsultaScene = new Scene(janelaConsultaParent);
-		Stage janelaConsultaStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-		janelaConsultaStage.hide();
-		janelaConsultaStage.setScene(janelaConsultaScene);
-		janelaConsultaStage.show();
+		Parent parent = FXMLLoader.load(getClass().getResource("/view/JanelaPesquisa.fxml"));
+		Scene scene = new Scene(parent);
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		stage.hide();
+		stage.setScene(scene);
+		stage.show();
 
 	}
+	
+	@FXML private javafx.scene.control.Button sairButton;
 
 	@FXML
 	void sairOnAction(ActionEvent event) {
+		
+		Stage stage = (Stage) sairButton.getScene().getWindow();
+        stage.close();
 
 	}
 
